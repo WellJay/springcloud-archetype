@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ${artifactId}
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    service-url:
+        defaultZone: http://192.168.2.250:9000/eureka/
