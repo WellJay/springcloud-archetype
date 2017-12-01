@@ -33,7 +33,7 @@
                 </fileSet>
             </fileSets>
         </module>
-        <module id="web" dir="web" name="web">
+        <module id="${rootArtifactId}-context" dir="context" name="${rootArtifactId}-context">
             <fileSets>
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
                     <directory>src/main/java</directory>

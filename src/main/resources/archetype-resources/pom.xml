@@ -9,7 +9,7 @@
 
     <modules>
         <module>feign-interface</module>
-        <module>web</module>
+        <module>context</module>
         <module>event-dto</module>
     </modules>
 
