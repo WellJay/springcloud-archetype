@@ -38,12 +38,12 @@
         </dependency>
         <dependency>
             <groupId>${groupId}</groupId>
-            <artifactId>${artifactId}-event-dto</artifactId>
+            <artifactId>${rootArtifactId}-event-dto</artifactId>
             <version>${version}</version>
         </dependency>
         <dependency>
             <groupId>${groupId}</groupId>
-            <artifactId>${artifactId}-feign-interface</artifactId>
+            <artifactId>${rootArtifactId}-feign-interface</artifactId>
             <version>${version}</version>
         </dependency>
         <dependency>

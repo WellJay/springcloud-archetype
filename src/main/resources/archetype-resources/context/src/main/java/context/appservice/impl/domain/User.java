@@ -2,7 +2,7 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 
-package ${package}.${artifactId}.appservice.impl.domain;
+package ${package}.context.appservice.impl.domain;
 
 import com.jovezhao.nest.ddd.EntityObject;
 
