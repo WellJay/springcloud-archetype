@@ -5,15 +5,15 @@
         xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <fileSets>
-        <!--<fileSet filtered="true" encoding="utf-8">-->
-            <!--<directory></directory>-->
-            <!--<includes>-->
-                <!--<include>.gitignore</include>-->
-            <!--</includes>-->
-        <!--</fileSet>-->
+        <fileSet filtered="true" encoding="utf-8">
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
+            </includes>
+        </fileSet>
     </fileSets>
     <modules>
-        <module id="${rootArtifactId}-feign-interface" dir="feign-interface" name="${rootArtifactId}-feign-interface">
+        <module id="${rootArtifactId}-feign" dir="feign" name="${rootArtifactId}-feign">
             <fileSets>
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
@@ -23,7 +23,7 @@
                 </fileSet>
             </fileSets>
         </module>
-        <module id="${rootArtifactId}-event-dto" dir="event-dto" name="${rootArtifactId}-event-dto">
+        <module id="${rootArtifactId}-event" dir="event" name="${rootArtifactId}-event">
             <fileSets>
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
@@ -44,6 +44,12 @@
                 </fileSet>
                 <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>src/main/test</directory>
                     <includes>
                         <include>**/**</include>
                     </includes>
