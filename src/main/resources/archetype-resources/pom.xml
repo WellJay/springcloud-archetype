@@ -8,9 +8,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>feign-interface</module>
+        <module>feign</module>
         <module>context</module>
-        <module>event-dto</module>
+        <module>event</module>
     </modules>
 
     <parent>
